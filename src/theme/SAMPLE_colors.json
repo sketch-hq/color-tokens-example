@@ -1,0 +1,22 @@
+{
+ "Category": {
+  "Commute": { "value": "rgba(45, 174, 230, 1)" },
+  "Food": { "value": "rgba(255, 187, 0, 1)" },
+  "House": { "value": "rgba(129, 94, 255, 1)" },
+  "Other": { "value": "rgba(87, 88, 89, 1)" },
+  "Shopping": { "value": "rgba(251, 131, 50, 1)" },
+  "Travel": { "value": "rgba(230, 76, 76, 1)" }
+ },
+ "Content": {
+  "Primary": { "value": "rgba(0, 0, 0, 0.85)" },
+  "Secondary": { "value": "rgba(0, 0, 0, 0.5)" },
+  "Tertiary": { "value": "rgba(0, 0, 0, 0.35)" }
+ },
+ "Fill": {
+  "Base": { "value": "rgba(249, 249, 249, 1)" },
+  "Dark Gray": { "value": "rgba(31, 31, 31, 1)" },
+  "Offset": { "value": "rgba(119, 196, 87, 1)" },
+  "Royal Blue": { "value": "rgba(34, 16, 82, 1)" }
+ },
+ "Pink-generated": { "value": "rgba(216, 41, 201, 1)" }
+}

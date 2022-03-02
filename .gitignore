@@ -1,2 +1,4 @@
 node_modules/*
 dist/*
+src/theme/colors.json
+tokensUrl.json

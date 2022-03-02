@@ -1,0 +1,21 @@
+{
+ "dependencies": {
+  "@babel/core": "^7.17.5",
+  "@babel/preset-env": "^7.16.11",
+  "@babel/preset-react": "^7.16.7",
+  "babel-loader": "^8.2.3",
+  "html-loader": "^3.1.0",
+  "html-webpack-plugin": "^5.5.0",
+  "react": "^17.0.2",
+  "react-dom": "^17.0.2",
+  "styled-components": "^5.3.3",
+  "webpack": "^5.69.1",
+  "webpack-cli": "^4.9.2",
+  "webpack-dev-server": "^4.7.4"
+ },
+ "scripts": {
+  "start": "yarn colors && webpack-dev-server --mode development --open",
+  "build": "yarn colors && webpack --mode production",
+  "colors": "node ./getColors.js"
+ }
+}
