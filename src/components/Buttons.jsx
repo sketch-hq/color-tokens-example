@@ -29,9 +29,8 @@ const FoodButton = styled(BaseButton)`
  background: ${({ theme }) => theme.Category['Food'].value};
 `;
 
-const HouseButton = styled(BaseButton)`
- background: ${({ theme }) => theme.Category['House'].value};
- color: #fff;
+const ShoppingButton = styled(BaseButton)`
+ background: ${({ theme }) => theme.Category['Shopping'].value};
 `;
 
 const Buttons = () => {
@@ -47,7 +46,7 @@ const Buttons = () => {
     <BaseButton>Base Button</BaseButton>
     <CommuteButton>Commute Button</CommuteButton>
     <FoodButton>Food Button</FoodButton>
-    <HouseButton>House Button</HouseButton>
+    <ShoppingButton>Shopping Button</ShoppingButton>
    </ThemeProvider>
   </Container>
  );
