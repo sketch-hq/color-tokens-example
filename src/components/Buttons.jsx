@@ -23,7 +23,6 @@ color: ${({ theme }) => theme.Content.Primary.value};
 
 const CommuteButton = styled(BaseButton)`
  background: ${({ theme }) => theme.Category['Commute'].value};
- color: #fff;
 `;
 
 const FoodButton = styled(BaseButton)`
