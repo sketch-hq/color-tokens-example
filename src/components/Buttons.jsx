@@ -8,9 +8,11 @@ const Container = styled.div`
 
 const BaseButton = styled.button`
 border: none;
-padding 8px 16px;
+border-radius: 0.5em;
+padding 1em 1.4em;
 font-weight: bold;
-margin: 0 8px;
+font-size: 0.8em;
+margin: 0 1em;
 background: ${({ theme }) => theme.Fill.Base.value};
 color: ${({ theme }) => theme.Content.Primary.value};
 
@@ -19,17 +21,17 @@ color: ${({ theme }) => theme.Content.Primary.value};
 }
 `;
 
-const DarkGreyButton = styled(BaseButton)`
- background: ${({ theme }) => theme.Fill['Dark Gray'].value};
+const CommuteButton = styled(BaseButton)`
+ background: ${({ theme }) => theme.Category['Commute'].value};
  color: #fff;
 `;
 
-const GreenButton = styled(BaseButton)`
- background: ${({ theme }) => theme.Fill['Offset'].value};
+const FoodButton = styled(BaseButton)`
+ background: ${({ theme }) => theme.Category['Food'].value};
 `;
 
-const RoyalBlueButton = styled(BaseButton)`
- background: ${({ theme }) => theme.Fill['Royal Blue'].value};
+const HouseButton = styled(BaseButton)`
+ background: ${({ theme }) => theme.Category['House'].value};
  color: #fff;
 `;
 
@@ -44,9 +46,9 @@ const Buttons = () => {
    <p>Using a Theme Provider by styled components.</p>
    <ThemeProvider theme={theme}>
     <BaseButton>Base Button</BaseButton>
-    <DarkGreyButton>Dark Grey Button</DarkGreyButton>
-    <GreenButton>Green Button</GreenButton>
-    <RoyalBlueButton>Royal Blue Button</RoyalBlueButton>
+    <CommuteButton>Commute Button</CommuteButton>
+    <FoodButton>Food Button</FoodButton>
+    <HouseButton>House Button</HouseButton>
    </ThemeProvider>
   </Container>
  );
