@@ -6,7 +6,7 @@ import Buttons from './Buttons';
 
 export const Container = styled.div`
  padding: 16px;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe UI Symbol', 'Segoe UI Emoji', 'Apple Color Emoji', Roboto, Helvetica, Arial, sans-serif;
  background-color: #fff;
  color: #000;
  width: 100%;
