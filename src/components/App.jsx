@@ -5,7 +5,7 @@ import ColorList from './ColorList';
 import Buttons from './Buttons';
 
 export const Container = styled.div`
- padding: 16px;
+ padding: 1.5em;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  background-color: #fff;
  color: #000;
