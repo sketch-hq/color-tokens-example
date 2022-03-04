@@ -8,6 +8,27 @@ To this:
 
 ![example of output](project-example.png)
 
+## Instalation instructions
+
+You'll need [`yarn`](https://classic.yarnpkg.com/lang/en/docs/install/) or [`npm`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to run this project, along with renaming the `SAMPLE_tokensURL.json` file in the project to `tokens.json` and adding your tokens URL there.
+
+Before starting the project, you'll need to install the dependencies with either of these commands:
+
+- `yarn`
+- `npm i`
+
+To start the project in development mode, you can:
+
+- `yarn start`
+- `npm run start`
+
+And to build for production mode:
+
+- `yarn build`
+- `npm run build`
+
+This project features React with Webpack and Styled Components, using Javascript.
+ 
 ## Importing your tokens into a file
 
 Here's a quick example on how you can use the new Export Color Tokens feature on Sketch with your project.
@@ -18,9 +39,7 @@ After activating your public Color Token URL, you can drop it on a `tokensURL.js
 {"url": "<YOUR_URL_HERE>"}
 ```
 
-After that, you can start this project using `yarn start` for the development mode, or `yarn build` for production mode.
-
-Both scripts will generate a `theme/colors.json` file with your colour tokens. The code doing this is the following, found on the file [getColors.js](getColors.js):
+The `start` and `build` scripts mentioned above will generate a `theme/colors.json` file with your colour tokens. The code doing this is the following, found on the file [getColors.js](getColors.js):
 
 ```
 const fs = require('fs');
