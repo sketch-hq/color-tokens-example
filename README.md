@@ -62,7 +62,7 @@ https.get(tokensUrl.url, (response) => {
 
 ## Using the tokens in your project
 
-We're providing an example React + Styled Components app that uses Color Tokens from the exported file. To do this on your project, you simply import your tokens file where you need it.
+We're providing an example React + Styled Components app that uses Color Tokens (in JSON format) from the exported file. To do this on your project, you simply import your tokens file where you need it.
 
 In our case, we have two colour groups on our tokens file: `Buttons` and `ColorList`. These two are explored on the [ColorList.jsx](/src/components/ColorList.jsx) and [Buttons.jsx](/src/components/Buttons.jsx) files, providing you different examples on how to access the token values.
 
