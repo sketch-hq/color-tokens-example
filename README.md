@@ -35,13 +35,13 @@ This project features React with Webpack and Styled Components, using Javascript
 
 Here’s a quick example on how you can use a Color Tokens export from Sketch with your project.
 
-After you activate a public Color Tokens URL (in JSON format) from a Sketch document in the web app, you can add it to a `tokensURL.json` file at the root of your project, in the following format:
+After you activate a public Color Tokens URL from a Sketch document in the web app, you can add it to a `tokensURL.json` file at the root of your project, in the following format:
 
 ```
 {"url": "<YOUR_URL_HERE>"}
 ```
 
-The `start` and `build` scripts mentioned above will generate a `theme/colors.json` file with your colour tokens. The code doing this is the following, found on the file [getColors.js](getColors.js):
+The `start` and `build` scripts mentioned above will generate a `theme/colors.json` file with your Color Tokens. The code doing this is the following, found on the file [getColors.js](getColors.js):
 
 ```
 const fs = require('fs');
