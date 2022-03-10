@@ -8,7 +8,7 @@ And bring them into a project like this:
 
 ![example of output](project-example.png)
 
-Please see our documentation for more information on [how to create Color Variables in Sketch](#) and [how to export Color Tokens](#).
+Please see our documentation for more information on [how to create Color Variables in Sketch](https://www.sketch.com/docs/designing/styling/color-variables/) and [how to export Color Tokens](https://www.sketch.com/docs/developer-handoff/#exporting-color-variables-as-color-tokens).
 
 ## Installation instructions
 
