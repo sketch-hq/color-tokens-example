@@ -1,23 +1,25 @@
-# Using Sketch color tokens export
+# Using a Color Tokens export from Sketch
 
-Going from this:
+With the Color Tokens feature in Sketch, you can take Color Variables in a Sketch document, like this:
 
 ![example of Sketch Library](sketch-file-example.png)
 
-To this:
+And bring them into a project like this:
 
 ![example of output](project-example.png)
 
-## Instalation instructions
+Please see our documentation for more information on [how to create Color Variables in Sketch](https://www.sketch.com/docs/designing/styling/color-variables/) and [how to export Color Tokens](https://www.sketch.com/docs/developer-handoff/#exporting-color-variables-as-color-tokens).
 
-You'll need [`yarn`](https://classic.yarnpkg.com/lang/en/docs/install/) or [`npm`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to run this project, along with renaming the `SAMPLE_tokensURL.json` file in the project to `tokens.json` and adding your tokens URL there.
+## Installation instructions
+
+You will need [`yarn`](https://classic.yarnpkg.com/lang/en/docs/install/) or [`npm`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to run this project. You will also need to rename the `SAMPLE_tokensURL.json` file in the project to `tokens.json` and add your Color Tokens URL there.
 
 Before starting the project, you'll need to install the dependencies with either of these commands:
 
 - `yarn`
 - `npm i`
 
-To start the project in development mode, you can:
+To start the project in development mode:
 
 - `yarn start`
 - `npm run start`
@@ -28,18 +30,18 @@ And to build for production mode:
 - `npm run build`
 
 This project features React with Webpack and Styled Components, using Javascript.
- 
-## Importing your tokens into a file
 
-Here's a quick example on how you can use the new Export Color Tokens feature on Sketch with your project.
+## Importing your Color Tokens into a file
 
-After activating your public Color Token URL, you can drop it on a `tokensURL.json` file at the root of your project, in the following format:
+Here’s a quick example on how you can use a Color Tokens export from Sketch with your project.
+
+After you activate a public Color Tokens URL from a Sketch document in the web app, you can add it to a `tokensURL.json` file at the root of your project, in the following format:
 
 ```
 {"url": "<YOUR_URL_HERE>"}
 ```
 
-The `start` and `build` scripts mentioned above will generate a `theme/colors.json` file with your colour tokens. The code doing this is the following, found on the file [getColors.js](getColors.js):
+The `start` and `build` scripts mentioned above will generate a `theme/colors.json` file with your Color Tokens. The code doing this is the following, found on the file [getColors.js](getColors.js):
 
 ```
 const fs = require('fs');
@@ -60,7 +62,7 @@ https.get(tokensUrl.url, (response) => {
 
 ## Using the tokens in your project
 
-We're providing an example React + Styled Components app that uses tokens from the exported file. To do this on your project, you simply import your tokens file where you need it.
+We're providing an example React + Styled Components app that uses Color Tokens (in JSON format) from the exported file. To do this on your project, you simply import your tokens file where you need it.
 
 In our case, we have two colour groups on our tokens file: `Buttons` and `ColorList`. These two are explored on the [ColorList.jsx](/src/components/ColorList.jsx) and [Buttons.jsx](/src/components/Buttons.jsx) files, providing you different examples on how to access the token values.
 
